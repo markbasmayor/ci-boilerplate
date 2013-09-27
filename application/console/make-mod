@@ -1,0 +1,15 @@
+#!/bin/bash
+
+if [ ! $1  ]; then
+    echo "Please enter the module name"
+    exit
+fi;
+
+cd ../modules
+mkdir $1
+cd ../modules/$1
+mkdir models
+mkdir controllers
+mkdir views
+
+
